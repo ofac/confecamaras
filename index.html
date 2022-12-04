@@ -29,7 +29,7 @@
         }
         main header nav.menu {
             background-color: #ffb528;
-            font-size: 0.9rem;
+            font-size: 1rem;
             min-height: 60px;
         }
         main header nav ul li {
@@ -185,7 +185,57 @@
             margin-bottom: 1rem;
             padding-left: 1.4rem;
         }
-
+        /* section.form */
+        main section.form h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #134989;
+        }
+        main section.form .button {
+            color: #134989;
+        }
+        main section.form .form-control {
+            background-color: #e8e8e8;
+            color: #134989;
+            padding: 0.6rem;
+            font-size: 1.2rem;
+            text-indent: 1rem;
+            border: none;
+        } 
+        main section.form .form-control::placeholder {
+            color: #aeaeae;
+        }
+        main section.form button {
+            font-weight: bold;
+        }
+        /* footer.footer */
+        main footer h3.title-social {
+            background-color: #134989;
+            font-weight: normal;
+            font-size: 0.8rem;
+            line-height: 2rem;
+            color: #fff;
+        }
+        main footer nav ul li {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        main footer nav ul li:nth-of-type(2) {
+            border-left: 1px solid #134989;
+            border-right: 1px solid #134989;
+        }
+        main footer nav a:is(:link, :focus, :visited) {
+            color: #134989;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+        main footer .confecamaras {
+            background-color: #f8f7ff;
+        }
+        main footer .colors {
+            background: linear-gradient(to right, #ffb528 40%, #134989 40% 70%, #e01313 70%);
+            height: 10px;
+        }
     </style>
 </head>
 <body>
@@ -227,8 +277,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center mt-5">
-                <!-- <video src=""></video> -->
-                <img src="images/img-video.png" width="480px">
+                <video src="video/educacion.mp4" width="480px" controls></video>
             </div>
         </section>
         <!--  -->
@@ -351,6 +400,75 @@
                 <img src="images/students.png" width="400px">
             </div>
         </section>
+        <!--  -->
+        <section class="form row">
+            <h2 class="title-form text-center p-2 mt-5 mb-5">Formulario de Contacto</h2>
+            <div class="col-md-6 offset-md-3">
+                <form class="row mb-5" method="POST" action="">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Nombre">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Departamento">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Apellido">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Ciudad">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control rounded-5" placeholder="Celular">
+                        </div>
+                        <div class="mb-4 button text-center">
+                            <button class="btn btn-lg bg-confec rounded-5 px-5">¡CONTACTANOS!</button>
+                        </div>
+                    </div>
+                </form>
+                  
+            </div>
+        </section>
+        <!--  -->
+        <footer class="footer row mt-2">
+            <div class="col-md-12">
+                <div class="universities text-center">
+                    <a href="#" target="_blank"><img src="images/logo-uniempresarial.png" alt="Uniempresarial"></a>
+                    <a href="#" target="_blank"><img src="images/logo-alexander.png" alt="Alxander von Humboldt"></a>
+                    <a href="#" target="_blank"><img src="images/logo-unab.png" alt="Universidad Autonoma de Bucaramanga"></a>
+                    <a href="#" target="_blank"><img src="images/logo-autonoma.png" alt="Universidad Autonoma de Occidente"></a>
+                </div> 
+            </div>
+            <h3 class="title-social text-center p-2 mt-5">
+                <span class="float-start">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" target="_blank"><img src="images/ico-facebook.svg" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="images/ico-instagram.svg" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="images/ico-twitter.svg" alt="Twitter"></a>
+                </span>
+                &copy; Todos los derechos reservados
+            </h3>
+            <nav>
+                <ul class="list-unstyled p-0 mt-3 mb-5 mx-auto d-flex justify-content-center align-items-center">
+                    <li><a href="#" target="_blank">Aviso de Privacidad</a></li>
+                    <li><a href="#" target="_blank">Politica de Tratamiento de Datos Personales</a></li>
+                    <li><a href="#" target="_blank">Términos y Condiciones</a></li>
+                </ul>
+            </nav>
+            <div class="confecamaras py-2">
+                <img class="float-end" src="images/logo-confecamaras.png" alt="Confecámaras" width="360px">
+            </div>
+            <div class="colors"></div>
+            
+            
+        </footer>
         <!--  -->
     </main>
 
