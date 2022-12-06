@@ -7,8 +7,10 @@
     <title>Confecámaras - [Educación y Formación Dual]</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
+        
         html {
             font-size: 16px;
+            scroll-behavior: smooth;
         }
         @font-face {
             font-family: SourceSans;
@@ -33,15 +35,15 @@
             min-height: 60px;
         }
         main header nav ul li {
-            border-left: 2px solid #fff;
+            border-left: 2px solid #134989;
             padding-left: 2rem;
         }
         main header nav ul li:nth-of-type(5) {
-            border-right: 2px solid #fff;
+            border-right: 2px solid #134989;
             padding-right: 2rem;
         }
         main header nav a:is(:link, :focus, :visited) {
-            color: #fff;
+            color: #134989;
             text-decoration: none;
         }
         main section.hero p {
@@ -79,7 +81,7 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28250, 250, 250' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%2819, 73, 137' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
         @media (max-width: 990px) {
@@ -89,7 +91,7 @@
             main header nav ul li {
                 border-left: none;
                 padding-left: 0;
-                border-top: 1px solid #fff;
+                border-top: 1px solid #134989;
                 width: 100%;
             }
             main header nav ul li:nth-of-type(1) {
@@ -98,7 +100,7 @@
             main header nav ul li:nth-of-type(5) {
                 border-right: none;
                 padding-right: 0;
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid #134989;
                 margin-bottom: 1rem;
             }
             main header nav ul li a:is(:link, :focus, :visited) {
@@ -253,9 +255,9 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="list-unstyled p-0 my-0 mx-auto d-flex flex-lg-row flex-column justify-content-center align-items-center gap-5">
                                 <li><a href="">¿Que és?</a></li>
-                                <li><a href="">Empresarios</a></li>
-                                <li><a href="">Instituciones Educativas</a></li>
-                                <li><a href="">Estudiantes</a></li>
+                                <li><a href="#businessman">Empresarios</a></li>
+                                <li><a href="#institutions">Instituciones Educativas</a></li>
+                                <li><a href="#students">Estudiantes</a></li>
                                 <li><a href="">Documentos y Enlaces</a></li>
                             </ul>
                         </div>
@@ -294,7 +296,7 @@
                                 Participar en un proceso de Educación y Formación Dual mejora la productividad, las capacidades de innovación de su empresa y reduce la rotación de personal.
                             </p>
                             <div class="button mx-auto">
-                                <a href="" class="btn btn-lg bg-confec my-2">Conoce más información</a>
+                                <a href="#businessman" class="btn btn-lg bg-confec my-2">Conoce más información</a>
                             </div>
                         </div>
                     </div>
@@ -310,7 +312,7 @@
                                 La Educación y Formación Dual te permite mejorar la calidad de los programas acádemicos y generar alianzas con el sector productivo .
                             </p>
                             <div class="button mx-auto">
-                                <a href="" class="btn btn-lg bg-confec my-2">Conoce más información</a>
+                                <a href="#institutions" class="btn btn-lg bg-confec my-2">Conoce más información</a>
                             </div>
                         </div>
                     </div>
@@ -326,7 +328,7 @@
                                 La Educación y Formación Dual te permite aprender en un ambiente laboral real, fortaleciendo habilidades y competencias que te ayudarán a acelerar el accesso a tu primer empleo.
                             </p>
                             <div class="button mx-auto">
-                                <a href="" class="btn btn-lg bg-confec my-2">Conoce más información</a>
+                                <a href="#students" class="btn btn-lg bg-confec my-2">Conoce más información</a>
                             </div>
                         </div>
                     </div>
@@ -340,7 +342,7 @@
             </button>
             </section>
         <!--  -->
-        <section class="businessman row">
+        <section class="businessman row" id="businessman">
             <h3 class="title-h3 text-center p-2"><strong>Empresarios</strong></h3>
             <div class="col-md-6 mt-5">
                 <div class="cont-left mx-auto">
@@ -353,7 +355,7 @@
                     </ul>
                     <h5 class="mt-3">Consulta cómo vincular tu empresa</h5>
                     <div class="button">
-                        <a href="" class="btn btn-lg bg-confec my-4">Ver más</a>
+                        <a href="pdf/guia-vinculación-empresas.pdf" target="_blank" class="btn btn-lg bg-confec my-4">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -362,7 +364,7 @@
             </div>
         </section>
         <!--  -->
-        <section class="institutions row">
+        <section class="institutions row" id="institutions">
             <h3 class="title-h3 text-center p-2"><strong>Instituciones Educativas</strong></h3>
             <div class="col-md-6 text-center mt-5">
                 <img src="images/did-you-know-01.png" width="400px">
@@ -376,14 +378,14 @@
                     </ul>
                     <h5 class="mt-3">Consulta cómo registrar tu Institución Educativa</h5>
                     <div class="button">
-                        <a href="" class="btn btn-lg bg-confec my-4">Ver más</a>
+                        <a href="pdf/procedimiento-obtencion-registros.pdf" target="_blank" class="btn btn-lg bg-confec my-4">Ver más</a>
                     </div>
                 </div>
             </div>
         </section>
         <!--  -->
-        <section class="students row">
-            <h3 class="title-h3 text-center p-2"><strong>Empresarios</strong></h3>
+        <section class="students row" id="students">
+            <h3 class="title-h3 text-center p-2"><strong>Estudiantes</strong></h3>
             <div class="col-md-6 mt-5">
                 <div class="cont-right mx-auto">
                     <ul class="list-unstyled">
@@ -404,7 +406,7 @@
         <section class="form row">
             <h2 class="title-form text-center p-2 mt-5 mb-5">Formulario de Contacto</h2>
             <div class="col-md-6 offset-md-3">
-                <form class="row mb-5" method="POST" action="">
+                <!-- <form class="row mb-5" method="POST" action="">
                     <div class="col-md-6">
                         <div class="mb-4">
                             <input type="text" class="form-control rounded-5" placeholder="Nombre">
@@ -432,7 +434,11 @@
                             <button class="btn btn-lg bg-confec rounded-5 px-5">¡CONTACTANOS!</button>
                         </div>
                     </div>
-                </form>
+                </form> -->
+                <div class="text-center mb-5">
+                    <a href="https://forms.office.com/r/Z7pDLTbJDM" target="_blank" class="btn btn-lg bg-confec rounded-5 px-5">¡CONTACTANOS!</a>
+                </div>
+
                   
             </div>
         </section>
@@ -440,10 +446,10 @@
         <footer class="footer row mt-2">
             <div class="col-md-12">
                 <div class="universities text-center">
-                    <a href="#" target="_blank"><img src="images/logo-uniempresarial.png" alt="Uniempresarial"></a>
-                    <a href="#" target="_blank"><img src="images/logo-alexander.png" alt="Alxander von Humboldt"></a>
-                    <a href="#" target="_blank"><img src="images/logo-unab.png" alt="Universidad Autonoma de Bucaramanga"></a>
-                    <a href="#" target="_blank"><img src="images/logo-autonoma.png" alt="Universidad Autonoma de Occidente"></a>
+                    <a href="https://www.uniempresarial.edu.co/" target="_blank"><img src="images/logo-uniempresarial.png" alt="Uniempresarial"></a>
+                    <a href="https://www.cue.edu.co/" target="_blank"><img src="images/logo-alexander.png" alt="Alexander von Humboldt"></a>
+                    <a href="https://unab.edu.co/unab-dual/" target="_blank"><img src="images/logo-unab.png" alt="Universidad Autonoma de Bucaramanga"></a>
+                    <a href="https://www.uao.edu.co/programa/administracion-de-empresas-modalidad-dual/" target="_blank"><img src="images/logo-autonoma.png" alt="Universidad Autonoma de Occidente"></a>
                 </div> 
             </div>
             <h3 class="title-social text-center p-2 mt-5">
