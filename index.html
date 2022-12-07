@@ -7,7 +7,6 @@
     <title>Confecámaras - [Educación y Formación Dual]</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        
         html {
             font-size: 16px;
             scroll-behavior: smooth;
@@ -16,9 +15,20 @@
             font-family: SourceSans;
             src: url("fonts/SourceSans-Roman.otf") format("opentype");
         }
-        body {
-            font-family: SourceSans;
+        @font-face {
+            font-family: 'Montserrat-Light';
+            src: url("fonts/Montserrat-Light.ttf") format("opentype");
         }
+        @font-face {
+            font-family: 'Montserrat-Medium';
+            src: url("fonts/Montserrat-Medium.ttf") format("opentype");
+        }
+        body {
+            font-family: 'Montserrat-Light';
+        }
+        h1, h2, h3 {
+            font-family: SourceSans;
+        } 
         main .bg-confec {
             color: #fff;
             background-color: #134989;
@@ -47,6 +57,7 @@
             text-decoration: none;
         }
         main section.hero p {
+            font-family: 'Montserrat-Light';
             color: #131313;
         }
         main section.hero .button {
@@ -254,18 +265,18 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="list-unstyled p-0 my-0 mx-auto d-flex flex-lg-row flex-column justify-content-center align-items-center gap-5">
-                                <li><a href="">¿Que és?</a></li>
+                                <li><a href="#hero">¿Que és?</a></li>
                                 <li><a href="#businessman">Empresarios</a></li>
                                 <li><a href="#institutions">Instituciones Educativas</a></li>
                                 <li><a href="#students">Estudiantes</a></li>
-                                <li><a href="">Documentos y Enlaces</a></li>
+                                <li><a href="javascript:;"  data-bs-toggle="modal" data-bs-target="#exampleModal">Documentos y Enlaces</a></li>
                             </ul>
                         </div>
                     </div>
                     </nav>
         </header>
         <!-- Hero -->
-        <section class="hero row">
+        <section class="hero row" id="hero">
             <div class="col-md-6">
                 <h2 class="title-hero text-start my-5 mx-auto">Educación y Formación Dual</h2>
                 <p class="description mx-auto">
@@ -279,7 +290,7 @@
                 </div>
             </div>
             <div class="col-md-6 text-center mt-5">
-                <video src="video/educacion.mp4" width="480px" controls></video>
+                <video src="video/educacion.mp4" class="ratio" controls></video>
             </div>
         </section>
         <!--  -->
@@ -472,9 +483,33 @@
                 <img class="float-end" src="images/logo-confecamaras.png" alt="Confecámaras" width="360px">
             </div>
             <div class="colors"></div>
-            
-            
         </footer>
+        <!--  -->
+        <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Documentos y Enlaces</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
         <!--  -->
     </main>
 
