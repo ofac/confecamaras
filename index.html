@@ -178,7 +178,8 @@
             width: 480px;
         }
 
-        main h5 {
+        main h5,
+        main h5 a:is(:link, :visited, :focus) {
             color: #134989;
             font-weight: bold;
         }
@@ -295,7 +296,7 @@
                     Para más información consulta los enlaces y documentos que tenemos para tí.
                 </p>
                 <div class="button mx-auto">
-                    <a href="" class="btn btn-lg bg-confec my-2">Ver Documentos</a>
+                    <a href="javascript:;"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-lg bg-confec my-2">Ver Documentos</a>
                 </div>
             </div>
             <div class="col-md-6 text-center mt-5">
@@ -415,7 +416,11 @@
                         <li>Alterna tu aprendizaje conociendo las necesidades reales que afrontan las empresas.</li>
                         <li>Altas posibilidades de continuar trabajando en la empresa al finalizar tu carrera.</li>
                     </ul>
-                    <h5 class="mt-3">Conoce aquí las Instituciones Educativas y los programas que se están ofreciendo en la modalidad Dual</h5>
+                    <h5 class="mt-3">
+                        <a href="pdf/listado-modalidad-dual.pdf" target="_blank">
+                        Conoce aquí las Instituciones Educativas y los programas que se están ofreciendo en la modalidad Dual
+                        </a>
+                    </h5>
                 </div>
             </div>
             <div class="col-md-6 text-center mt-5">
@@ -501,7 +506,7 @@
     <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Documentos y Enlaces</h1>
+                <h5 class="modal-title fs-5" id="exampleModalLabel">Documentos y Enlaces</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -512,6 +517,23 @@
                     <li><a href="https://www.mineducacion.gov.co/sistemasdeinformacion/1735/propertyvalue-41698.html" target="_blank">Sistema de Aseguramiento de la Calidad en Educación Superior</a></li>
                     <li><a href="https://eurosocial.eu/wp-content/uploads/2022/07/Herramienta_110_PS_Colombia_Estrategia-de-formacion-dual.pdf" target="_blank">Estrategia nacional para el fomento de la formación dual en las empresas de Colombia</a></li>
                     <li><a href="https://www.mintrabajo.gov.co/web/guest/subsistema-de-formación-para-el-trabajo-y-su-aseguramiento-de-la-calidad" target="_blank">Subsistema de Formación para el Trabajo y su Aseguramiento de la Calidad</a></li>
+                </ul>
+                <h5>Empresarios</h5>
+                <ul>
+                    <li>
+                        <a href="pdf/guia-vinculacion-empresas.pdf" target="_blank">Guía para la vinculación de empresas en programas de educación y formación dual
+                        </a>
+                    </li>
+                </ul>
+                <h5>Instituciones Educativas</h5>
+                <ul>
+                    <li>
+                        <a href="pdf/procedimiento-obtencion-registros.pdf" target="_blank">Procedimiento para la obtención de registros para programas de educación y formación dual</a>
+                    </li>
+                </ul>
+                <h5>Estudiantes</h5>
+                <ul>
+                    <li><a href="pdf/listado-modalidad-dual.pdf" target="_blank">Listado de instituciones de educación con programas bajo modalidad dual</a></li>
                 </ul>
             </div>
             <div class="modal-footer">
