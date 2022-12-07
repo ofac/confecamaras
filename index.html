@@ -249,6 +249,15 @@
             background: linear-gradient(to right, #ffb528 40%, #134989 40% 70%, #e01313 70%);
             height: 10px;
         }
+        main .modal ul li {
+            margin-bottom: 0.6rem;
+            /* border-bottom: 1px solid #134989; */
+            padding: 0.2rem;
+        }
+        main .modal ul li a:is(:link, a:visited, a:focus) {
+            color: #134989;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -466,16 +475,16 @@
             <h3 class="title-social text-center p-2 mt-5">
                 <span class="float-start">
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="#" target="_blank"><img src="images/ico-facebook.svg" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="images/ico-instagram.svg" alt="Instagram"></a>
-                    <a href="#" target="_blank"><img src="images/ico-twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/Confecamaras/" target="_blank"><img src="images/ico-facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/company/16244464/admin/" target="_blank"><img src="images/ico-linkedin.svg" alt="Instagram"></a>
+                    <a href="https://twitter.com/Confecamaras" target="_blank"><img src="images/ico-twitter.svg" alt="Twitter"></a>
                 </span>
                 &copy; Todos los derechos reservados
             </h3>
             <nav>
                 <ul class="list-unstyled p-0 mt-3 mb-5 mx-auto d-flex justify-content-center align-items-center">
                     <li><a href="#" target="_blank">Aviso de Privacidad</a></li>
-                    <li><a href="#" target="_blank">Politica de Tratamiento de Datos Personales</a></li>
+                    <li><a href="https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales" target="_blank">Politica de Tratamiento de Datos Personales</a></li>
                     <li><a href="#" target="_blank">Términos y Condiciones</a></li>
                 </ul>
             </nav>
@@ -488,7 +497,7 @@
         <!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
@@ -497,15 +506,16 @@
             </div>
             <div class="modal-body">
                 <ul>
-                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="https://hecaa.mineducacion.gov.co/consultaspublicas/ies" target="_blank">Sistema Nacional de Información para la Educación superior en Colombia</a></li>
+                    <li><a href="https://especiales.colombiaaprende.edu.co/mnc/catalogo.html" target="_blank">Catálogo Nacional de Cualificaciones</a></li>
+                    <li><a href="https://www.mineducacion.gov.co/portal/normativa/Decretos/387348:Decreto-1330-de-julio-25-de-2019" target="_blank">Decreto 1330 de julio 25 de 2019</a></li>
+                    <li><a href="https://www.mineducacion.gov.co/sistemasdeinformacion/1735/propertyvalue-41698.html" target="_blank">Sistema de Aseguramiento de la Calidad en Educación Superior</a></li>
+                    <li><a href="https://eurosocial.eu/wp-content/uploads/2022/07/Herramienta_110_PS_Colombia_Estrategia-de-formacion-dual.pdf" target="_blank">Estrategia nacional para el fomento de la formación dual en las empresas de Colombia</a></li>
+                    <li><a href="https://www.mintrabajo.gov.co/web/guest/subsistema-de-formación-para-el-trabajo-y-su-aseguramiento-de-la-calidad" target="_blank">Subsistema de Formación para el Trabajo y su Aseguramiento de la Calidad</a></li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn bg-confec" data-bs-dismiss="modal">Cerrar</button>
             </div>
             </div>
         </div>
